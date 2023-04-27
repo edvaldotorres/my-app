@@ -12,7 +12,7 @@
 
 ## Prerequisites
 
-* NPM
+* Docker
 
 ## Install
 
@@ -30,13 +30,13 @@ cd my-app
 3. Install the dependencies
 
 ```sh
-npm install
+docker build -t my-app . 
 ```
 
 4. Start server
 
 ```sh
-npm run dev
+docker run -p 8080:8080 -d my-app
 ```
 
 ## Usage
